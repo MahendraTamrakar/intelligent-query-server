@@ -75,7 +75,7 @@ export class DocumentProcessor {
 import fs from 'fs/promises';
 import path from 'path';
 import crypto from 'crypto';
-import pdfjsLib from 'pdfjs-dist/legacy/build/pdf.js';
+import * as pdfjsLib from 'pdfjs-dist/legacy/build/pdf.mjs';
 import { Document as DocxDocument } from 'docx4js';
 import * as EmailParser from 'mailparser';
 import DocumentModel from '../models/document.js';
